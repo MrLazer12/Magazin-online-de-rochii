@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/icons/title_icon.jpg" type="image/jpg">
+    <title>ClothingStore - Magazin online de imbracaminte</title>
+    
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body onmousedown="card_from_rotate_to_initial_state()">
+    <section class="container">
+        <form action="" method="post">
+
+                <div id="card" class="card">
+                    <img width="70" class="hide" src="img/ceva.png" alt="ceva">
+                    <span>
+                        <img width="70" class="hide visa_img" src="img/visa-5-logo-png-transparent.png" alt="visa">
+                    </span>
+                    
+                    <div id="card2" class="card-number hide border_unvisible">
+                        <span id="number0">#</span>
+                        <span id="number1">#</span>
+                        <span id="number2">#</span>
+                        <span id="number3">#</span>
+                        <span id="number4">#</span>
+                        <span id="number5">#</span>
+                        <span id="number6">#</span>
+                        <span id="number7">#</span>
+                        <span id="number8">#</span>
+                        <span id="number9">#</span>
+                        <span id="number10">#</span>
+                        <span id="number11">#</span>
+                        <span id="number12">#</span>
+                        <span id="number13">#</span>
+                        <span id="number14">#</span>
+                        <span id="number15">#</span>
+                    </div>
+
+                   <div class="display-flex space-between">
+                       <div id="persName" class="card_holder display-inline-block float-left hide border_unvisible">
+                           <h3>Card Holder</h3>
+                           <p id="nameParagraph">Card Holder Name</p>
+                       </div>
+   
+                       <div id="expire" class="card_holder display-inline-block float-right hide border_unvisible">
+                           <h3>Expires</h3>
+                           <p><span id="SpanMonth">MM</span> / <span id="year">YY</span></p>
+                       </div>     
+                   </div> 
+                </div>
+
+                <h3>Card number</h3>
+                    <input onmouseout="unSetBorder('card2')" onmouseover="setBorder('card2')" title="Only numbers" maxlength="16" id="number" type="text">
+                <h3>Card name</h3>
+                    <input onmouseout="unSetBorder('persName')" onmouseover="setBorder('persName')" title="Only characters"  maxlength="20" name="card_namee" id="nameInput" type="text">
+
+            <div class="display-flex space-between border_unvisible">
+                <div onmouseout="unSetBorder('expire')" onmouseover="setBorder('expire')" class="date">
+                    <h3>Expiration date</h3>
+                    <select onchange="replace_month_year('IDmonth', 'SpanMonth')" id="IDmonth" name="month">
+                        <option selected disabled>Month</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select>
+
+                    <select onchange="replace_month_year('IDyear', 'year')" id="IDyear" name="year">
+                        <option selected disabled>Year</option>
+                        <option value="2015">2015</option>
+                        <option value="2016">2017</option>
+                        <option value="2018">2018</option>
+                        <option value="2019">2019</option>
+                        <option value="2020">2020</option>
+                        <option value="2021">2021</option>
+                        <option value="2022">2022</option>
+                    </select>
+                </div>
+
+                <div class="cw">
+                    <h3>CW</h3>
+                    <input maxlength="4" onkeyup="cw_write()" onclick="rotate_card_write_to_input()" id="card_number" type="text">
+                </div>   
+            </div>   
+                <input type="submit" value="Submit">            
+
+        </form>
+    </section>
+    <script src="js/script.js" type="text/javascript"></script>
+    <br>
+    <br>
+    <br>
+    <br><br>
+    <h1><a href="https://habr.com/ru/company/edison/blog/473894/">IDEEA</a></h1>
+</body>
+</html>

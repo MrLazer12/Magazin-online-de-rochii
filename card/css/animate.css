@@ -1,0 +1,20 @@
+.visa_img{
+    position: absolute;
+    display: block;
+    right: 5%;
+    top: 12%;
+    animation-name: visa_animate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+.visa_img2{ display: none; }
+.visa_img3{ display: none; }
+/* 
+@keyframes visa_animate{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+} */

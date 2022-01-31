@@ -1,0 +1,174 @@
+.no_found{
+    width: 100%;
+    font-family: 'Sanchez', serif;
+    text-align: left !important;
+    font-weight: bold;
+    padding: 2vh 0.5vw;
+    border: 3px solid rgb(165, 42, 42);
+    border-radius: 0.45vw 0.45vw 2vw 1vw;
+    border-left-width: 1.2vw;
+    background: rgb(255, 118, 118);
+    color: brown;
+}
+
+article:first-of-type { width: 68vw; }
+article:first-of-type div:nth-of-type(2) { justify-content: center; }
+
+.SIDEBAR{
+    z-index: 4;
+    width: 18.2vw;
+    height: fit-content;
+    font-size: 1rem;
+    text-align: left;
+    margin-right: 3%;
+    border: 1px solid #E9E9E9;
+}
+.SIDEBAR svg{ height: 2vh; }
+#close_SIDEBAR{ 
+    cursor: pointer;
+    z-index: 4;
+    display: none;
+    font-size: 1.2rem;
+    padding: 0.5vw;
+}
+#show_menu{
+    display: none;
+    z-index: 3;
+    position: fixed;
+    left: 0;
+    padding: 2vh;
+    background: rgb(240, 128, 128);
+    color: rgb(255, 255, 255);
+}
+
+.SIDEBAR nav #title_sidebar svg{ height: 2.4vh; }
+.SIDEBAR nav #title_sidebar{
+    font-size: 0.8rem;
+    background: #4E4E4E;
+    color: white;
+    text-transform: uppercase;
+}
+.SIDEBAR nav #title_sidebar:hover{
+    background: #4E4E4E;
+    border-left: none;
+}
+.SIDEBAR nav #title_sidebar svg{ display: block; }
+
+.SIDEBAR nav li{
+    font-size: 0.75rem;
+    background: #F9F9F9;
+    border-bottom: 1px solid #E9E9E9;
+    cursor: pointer;
+}
+.SIDEBAR nav li span.display-flex{ padding: 2vh 0 2vh 2vw; }
+.SIDEBAR nav #title_sidebar span.display-flex{ padding: 2vh 0 2vh 2vw; }
+
+.SIDEBAR nav li:hover{
+    background: white;
+    border-left: 1.5px solid greenyellow;
+}
+
+.SIDEBAR nav li span svg{ display: none; }
+.SIDEBAR nav li span:hover svg{ 
+    display: block; 
+    cursor: pointer; 
+}
+
+/* ================================================================================ */
+.grid_x3:first-of-type{
+    height: 14px;
+    grid-template-columns: auto auto;
+}
+.grid_x3{
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.grid_x3:last-of-type{
+    height: 24px;
+    grid-template-columns: auto auto auto auto;
+}
+
+.grid_x3:first-of-type div{ padding: 3px; }
+
+
+.grid_x3:hover div,.active div{ background: black; }
+.grid_x3 div{
+    margin: 1px;
+    border: 2px solid black;
+    padding: 2.5px;
+    height: 2px;
+}
+
+
+#filter{
+    margin-left: 10px;
+    border: 2px solid rgb(204, 204, 204);
+    padding: 5px 15px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* ========================================================================================== */
+article:first-of-type button{
+    border: 1px solid black;
+    background: white;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    display: block;
+    margin: 0 auto;
+}
+article:first-of-type button:hover{
+    background: black;
+    color: white;
+    transition: 1s ease;
+}
+article:first-of-type p{
+    margin-top: 1vh;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.hr{
+    display: block;
+    margin: 0 auto;
+    height: 4px;
+    width: 20vw;
+    background: rgb(222, 222, 222);
+}
+/* ========================================================================================== */
+.dress{
+    width: 21.4vw;
+    margin: 0.6vw;
+}
+
+@media screen and (max-width: 1000px){
+    .SIDEBAR{ display: none; }
+    #show_menu{ display: block; }
+    article:first-of-type{  width: 100%;  }
+}
+
+@media screen and (max-width: 500px){
+    article:first-of-type div.display-flex:first-of-type{ 
+        flex-direction: column;
+        font-size: 1.2rem;
+    }
+    article:first-of-type div.display-flex:first-of-type h5.display-flex{
+        margin: 2vh 0;
+    }
+    article:first-of-type div.display-flex:first-of-type div.filter{
+        width: 100%;
+        margin-top: 4vh;
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .SIDEBAR{
+        top: -2vh;
+        width: 35.5vw;
+    }
+    .SIDEBAR svg{ height: 2.5vh !important; }
+
+    #title_sidebar span{ font-size: 1.25rem; }
+    .SIDEBAR nav li{ font-size: 1.15rem; } 
+}

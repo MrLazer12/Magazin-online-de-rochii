@@ -1,0 +1,71 @@
+.meniu_navigare2{ display: none; }
+
+@media screen and (max-width: 1000px){
+    html, body{ font-size: 13px; }
+}
+
+@media screen and (min-width: 900px){
+    .display_none{ display: none; }
+    .none{ display: block; }
+}
+
+@media screen and (max-width: 900px){
+    #logo{ padding-left: 0; }
+
+    .adaptive_font_size h1.white{ font-size: 2.3rem; }
+    .adaptive_font_size ul li a{ font-size: 1.3rem; }
+
+    .first_slider > .prev,.first_slider > .next{ top: 10vh;}
+
+    .display_none{ display: block; }
+    .none{ display: none; }
+
+    .contacts div:nth-child(2){ width: 20vw; }
+    .svgHover{
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+
+@media screen and (max-width: 500px){
+    html, body{ font-size: 11px; }
+    svg{  height: 4.1vh !important; }
+
+    #search_section{
+        padding: 2vw;
+        left: 10vw;
+        width: 80%;
+        box-shadow: 0px 0px 0vw 150vw #00000070;
+    }
+    #search_field{ height: 4vh; }
+    #search_section > ul li div h1, #search_section > ul li div h2
+    { font-size: 1.65rem; }
+    #search_section > ul li img{ width: 25vw; }
+/* =============================================================================== */
+    .meniu_navigare > ul li:first-of-type { margin-top: 0vh; }
+    .meniu_navigare > ul li{ 
+        width: 100%; 
+        margin-top: 1.75vh; 
+    }
+    .meniu_navigare2 > ul li{ width: 100%; }
+/* =============================================================================== */
+    .contacts div{ width: 100% !important; text-align: center; }
+
+    .contacts div:nth-child(2) a{ height: 3vh; }
+    .contacts div:nth-child(2) a svg{ height: 3vh !important; }
+
+    .contacts span svg{ 
+        padding: 1vw; 
+     }
+
+    .users_comments .dots{ margin: 2.6vw 0; }
+    .comment img{ width: 20vw; }
+ 
+
+    .svgHover{ margin: 0; }
+    .svgHover svg{ 
+        height: 4vh !important;
+        margin-right: 2vw;
+    }
+}

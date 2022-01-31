@@ -1,0 +1,108 @@
+*{ margin: 0; padding: 0; box-sizing: border-box; }
+body{
+    font-family: 'Open Sans', sans-serif;
+    background: #D4EAFD;
+}
+
+.display-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+
+.container form{
+-webkit-box-shadow: 0px 0px 40px -4px rgba(0,0,0,0.55); 
+box-shadow: 0px 0px 40px -4px rgba(0,0,0,0.55);
+    margin-top: 100px;
+    padding: 25px;
+    background: white;
+}
+.container form h3{
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-weight: 400;
+    font-size: 16px;
+}
+.container form input, .date select{
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    padding: 12px;
+    width: 50vw;
+}
+.container form input:focus{
+-webkit-box-shadow: 0px 6px 10px -4px #000000; 
+box-shadow: 0px 6px 10px -4px #000000;    
+}
+.container form input[type=submit]{
+    border: none;
+    margin-top: 25px;
+    color: white;
+    background: #0055D4;
+    -webkit-box-shadow: 0px 5px 21px -4px #000000; 
+    box-shadow: 0px 5px 21px -4px #000000;
+}
+.container form input[type=submit]:hover{
+    cursor: pointer;
+    transition: 1s;
+    background: #870B11;
+}
+/*__________________________________________________________________________________*/
+.display-inline-block{ display: inline-block;}
+.space-between{ justify-content: space-between; }
+.hide{ display: block; }
+
+.card{
+    transform: translate(0px,-100px);
+    padding: 25px;
+-webkit-box-shadow: 0px 13px 31px -4px #000000; 
+    box-shadow: 0px 13px 31px -4px #000000;
+    background-image: url("../img/card.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    border-radius: 25px;
+    width: 50vw;
+}
+
+#number3,#number7,#number11{ margin-right: 5%; }
+
+.card-number{
+    background: rgb(0, 0, 0);
+    margin-top: 7%;
+    display: flex; 
+    justify-content: space-between;
+    font-size: 24px;
+    padding: 20px;
+    color: white;
+}
+
+.border_unvisible{
+    border: 2.2px solid rgba(0, 0, 0, 0);
+}
+
+.card input{
+    width: 40vw !important;
+}
+
+.cw{
+    margin-left: 30px;
+}
+.cw input, .date select{
+    width: 15vw !important;
+}
+
+.card_holder{
+    padding: 5px 10px 5px 10px;
+    margin-top: 5%;
+    color: white;
+    font-size: 15.5px;
+}
+.card_holder h3{
+    color: cadetblue;
+}
+

@@ -1,0 +1,81 @@
+.slideshow-container {
+    margin-top: 3vh;
+    position: relative;
+}
+.slideshow-container .mySlides > img {
+    width: 100%;
+}
+.mySlides {
+    display: none;
+}
+
+.prev,.next{
+    z-index: 3;
+    cursor: pointer;
+    position: absolute;
+    top: 35%;
+    padding: 2%;
+    color: black;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+.prev svg,.next svg{
+    height: 40px;
+}
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.dots {
+    text-align: center;
+}
+
+.dot {
+    border: 2px solid black;
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+    margin: 0 2px;
+    background-color: none;
+    border-radius: 50%;
+    display: inline-block;
+    transition: 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: black;
+}
+
+/*=== Fading animation ==================================================================== */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2.7s;
+    animation-name: fade;
+    animation-duration: 2.7s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}

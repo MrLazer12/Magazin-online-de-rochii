@@ -1,0 +1,173 @@
+/* STRAT afisare 3 cele mai bune produse================================================================================= */
+.background-green{ background: green; }
+.background-blue{ background: blue; }
+.background-aqua{ background: aqua; }
+.background-antiquewhite{ background: antiquewhite; }
+.background-black{ background: black; }
+.background-lightgray{ background: lightgray; }
+.background-white{ background: rgb(236, 236, 236); }
+
+.h6{ font-size: 0.8rem; }
+
+.dress-slider,.dress{
+    height: 70vh;
+}
+.dress-slider{
+    justify-content: center;
+    overflow: hidden;
+}
+.dress-slider .next, .dress-slider .prev{
+    z-index: 3;
+}
+.dress span{ display: none; }
+.dress span > svg{
+    height: 20px;
+}
+
+.dress{
+    z-index: 1;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-end;
+    margin-right: 1.5vw;
+    transition: 0.8s ease;
+    background-image: url(../img/girls/1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 27vw;
+}
+.dress:last-of-type{ margin-right: 0; }
+.dress:hover span{ display: block; }
+
+.dress div:first-of-type{
+    justify-content: space-between;
+}
+
+.size_info{
+    display: none;
+	width: 80%;
+	margin: 0 auto;
+}
+.size_info > h1{
+	border: 2px solid white;
+	padding: 0.3vw;
+}
+.size_info > h1:hover{
+	border-color: black;
+}
+.dress:hover .size_info{
+    display: flex;
+}
+.dress:hover .info > .text-center:first-of-type{ display: none; }
+
+.dress h2, .dress h3, .dress span{
+    font-size: 0.8rem;
+    padding: 10px;
+    background: white;
+}
+.dress h3:first-of-type{ padding-bottom: 0;}
+
+
+.dress h2{
+    text-transform: uppercase;
+    padding: 10px 15px;
+}
+
+.dress_color{
+    margin: 0 auto;
+    width: 30px;
+    height: 27px;
+    border: 1px solid black;
+    background: white;
+    padding: 3px;
+}
+.dress_color div{ height: 19px; z-index: 2; }
+
+
+
+/* COMENTARIILE UTILIZATORILOR============================================================== */
+.users_comments{
+	padding: 3vw;
+	background-position: center;
+	background-image: url(../img/bg.jpg);
+	margin-top: 4vh;
+}
+.h4{ font-size: 1.2rem; }
+.users_comments .dots{ margin: 1.6vw 0; }
+
+.comment{ display: none; }
+.comment img{
+	width: 10vw;
+	margin: 2vh 0;
+	border-radius: 50%;
+}
+.comment p{
+	font-size: 0.9rem;
+	font-style: italic;
+	margin: 0 auto;
+	width: 95%;
+}
+/* END ======================================================================================== */
+
+
+
+
+
+/* START NEWS ==================================================================================================== */
+.news .more{
+    width: 100%;
+    font-size: 0.9rem;
+    text-align: center;
+    margin: 2vw 0;
+}
+.news .more a:hover{
+    transition: 1s;
+    color: aqua;
+}
+
+.list_news{
+    display: flex;
+    justify-content: center;
+}
+.list_news li{
+    margin-right: 2vw; 
+    position: relative; 
+    width: 30%; 
+}
+.list_news li:last-of-type{ margin-right: 0; }
+.list_news li > img{
+    z-index: 1;
+    width: 100%;
+}
+
+.list_news h1{ 
+    font-size: 1rem; 
+    margin: 2.2vh 0;
+}
+.list_news a:hover{ text-decoration: underline; }
+
+.list_news p{ 
+    font-size: 0.75rem; 
+}
+
+.data{
+  position: absolute;
+    z-index: 2;
+    right: -1vh;
+    bottom: 12vh;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+  width: 28%;
+    height: 25%;
+  font-size: 1rem;
+    color: white;
+    background-image: url(../img/icons/data_content_white.png);
+}
+.data span > hr{
+    width: 30px;
+    height: 2px;
+    background: white;
+    margin: 2px 0;
+}

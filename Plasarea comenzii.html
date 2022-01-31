@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Rochie este cel mai elegant și adorabil gen de îmbrăcăminte din garderoba femeilor.Rochia perfectă! Fiecare femeie va găsi în magazinul online Maorasallena rochia potrivită oricărei ocazii.">
+	
+	<link rel="shortcut icon" href="img/icons/title_icon.jpg" type="image/jpg">
+	<title>ClothingStore - Magazin online de imbracaminte</title>
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/slider.css">
+	<link rel="stylesheet" href="css/adaptive/adaptive_main.css">
+	<link rel="stylesheet" href="css/contacts.css">
+	<link rel="stylesheet" href="css/card_popUP_menu.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald|Sanchez&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
+	<style type="text/css">
+		b{ margin-right: 0.6vw; }
+
+		form{ 
+			width: 52vw;
+			display: flex;
+			flex-flow: column wrap;
+			align-items: center; 
+			text-align: left;
+		}
+		form input, form select, form span{ width: 100%; }
+		form > div span:first-of-type{ margin-right: 2vw; }
+		form .button{
+			width: 50% !important;
+			text-transform: uppercase;
+		}
+		
+		.input_x2_one_line{ width: 100%; }
+		.input_x2_one_line span{ width: 48%; }
+
+		.show_user_card{
+			display: grid;
+			grid-template-columns: auto auto;
+			width: 100%;
+			border: 3px solid lightgray;
+			border-top: 0;
+		}
+		.show_user_card div h1,.show_user_card div h2{
+			padding: 1vw 2vw;
+		}
+		.border-right{ border-right: 3px solid lightgray; }
+		.show_user_card div h1{
+			font-weight: bold;
+			font-size: 1.375rem;
+			border-top:  3px solid lightgray;
+			border-bottom: 3px solid lightgray;			
+		}
+		.show_user_card div h2{
+			font-size: 1.075rem;
+		}
+	</style>
+</head>
+<body>
+	<button class="top">
+		<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-circle-left" class="svg-inline--fa fa-arrow-circle-left fa-w-16" role="img" viewBox="0 0 512 512"><path fill="currentColor" d="M256 504C119 504 8 393 8 256S119 8 256 8s248 111 248 248-111 248-248 248zm28.9-143.6L209.4 288H392c13.3 0 24-10.7 24-24v-16c0-13.3-10.7-24-24-24H209.4l75.5-72.4c9.7-9.3 9.9-24.8.4-34.3l-11-10.9c-9.4-9.4-24.6-9.4-33.9 0L107.7 239c-9.4 9.4-9.4 24.6 0 33.9l132.7 132.7c9.4 9.4 24.6 9.4 33.9 0l11-10.9c9.5-9.5 9.3-25-.4-34.3z"></path></svg>
+	</button>
+
+	<main class="container">
+		<header>
+<!-- =============PRIMUL MENIU=============================================================================== -->
+			<nav class="main_menu display-flex padding_0-3pr">
+				<ul class="display-flex">
+					<li>
+						<button>
+							<svg class="margin_10px" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="globe" class="svg-inline--fa fa-globe fa-w-16" role="img" viewBox="0 0 496 512"><path fill="currentColor" d="M336.5 160C322 70.7 287.8 8 248 8s-74 62.7-88.5 152h177zM152 256c0 22.2 1.2 43.5 3.3 64h185.3c2.1-20.5 3.3-41.8 3.3-64s-1.2-43.5-3.3-64H155.3c-2.1 20.5-3.3 41.8-3.3 64zm324.7-96c-28.6-67.9-86.5-120.4-158-141.6 24.4 33.8 41.2 84.7 50 141.6h108zM177.2 18.4C105.8 39.6 47.8 92.1 19.3 160h108c8.7-56.9 25.5-107.8 49.9-141.6zM487.4 192H372.7c2.1 21 3.3 42.5 3.3 64s-1.2 43-3.3 64h114.6c5.5-20.5 8.6-41.8 8.6-64s-3.1-43.5-8.5-64zM120 256c0-21.5 1.2-43 3.3-64H8.6C3.2 212.5 0 233.8 0 256s3.2 43.5 8.6 64h114.6c-2-21-3.2-42.5-3.2-64zm39.5 96c14.5 89.3 48.7 152 88.5 152s74-62.7 88.5-152h-177zm159.3 141.6c71.4-21.2 129.4-73.7 158-141.6h-108c-8.8 56.9-25.6 107.8-50 141.6zM19.3 352c28.6 67.9 86.5 120.4 158 141.6-24.4-33.8-41.2-84.7-50-141.6h-108z"/></svg>
+							<br>Rom/eng
+						</button>
+					</li>
+					<li>
+						<button onclick="document.getElementById('search_section').style.display = 'block'">
+							<svg class="margin_10px" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+							<br>Search
+							<section id="search_section">
+								<div class="display-flex justify-space-between">
+									<form action="http://google.com/search" target="_blank">
+										<input id="search_field" name="q" type="text">
+									</form>
+									<span onclick="window.location.href = window.location.href">
+										<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times" class="svg-inline--fa fa-times fa-w-11" role="img" viewBox="0 0 352 512">
+											<path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"/></svg>
+									</span>
+								</div>
+							</section>
+						</button>
+					</li>
+				</ul>
+
+				<h1 class="font-famiy-Sanchez" id="logo"><a href="index.html">ClothingStore</a></h1>
+
+				<ul class="display-flex">
+					<li id="button_display_menu" class="display_none">
+						<button>
+							<svg class="margin_10px" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" role="img" viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg>
+							<br>Menu
+						</button>
+					</li>
+<!-- ===================================================================================================================================================================== -->
+					<li class="none">
+						<button onclick="show_poUP_menu()" class="position_relative">
+							<svg class="margin_10px" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="cart-arrow-down" class="svg-inline--fa fa-cart-arrow-down fa-w-18" role="img" viewBox="0 0 576 512"><path fill="currentColor" d="M504.717 320H211.572l6.545 32h268.418c15.401 0 26.816 14.301 23.403 29.319l-5.517 24.276C523.112 414.668 536 433.828 536 456c0 31.202-25.519 56.444-56.824 55.994-29.823-.429-54.35-24.631-55.155-54.447-.44-16.287 6.085-31.049 16.803-41.548H231.176C241.553 426.165 248 440.326 248 456c0 31.813-26.528 57.431-58.67 55.938-28.54-1.325-51.751-24.385-53.251-52.917-1.158-22.034 10.436-41.455 28.051-51.586L93.883 64H24C10.745 64 0 53.255 0 40V24C0 10.745 10.745 0 24 0h102.529c11.401 0 21.228 8.021 23.513 19.19L159.208 64H551.99c15.401 0 26.816 14.301 23.403 29.319l-47.273 208C525.637 312.246 515.923 320 504.717 320zM403.029 192H360v-60c0-6.627-5.373-12-12-12h-24c-6.627 0-12 5.373-12 12v60h-43.029c-10.691 0-16.045 12.926-8.485 20.485l67.029 67.029c4.686 4.686 12.284 4.686 16.971 0l67.029-67.029c7.559-7.559 2.205-20.485-8.486-20.485z"/></svg>
+							<br>Coșul meu
+							<span id="number_products">0</span>
+						</button>
+						<ul class="preview_products">
+							<li><h1>Coșul dvs.</h1></li>
+							<li>
+								<input onclick="goToPage('Plasarea comenzii.html')" class="font-famiy-Oswald button" type="submit" value="Către finalizare >">
+							</li>
+							<li>
+								<input onclick="goToPage('user_card.html')" class="font-famiy-Oswald button" type="submit" value="Spre coș >">
+							</li>
+							
+							<ul id="preview_products">
+								<li style="display: none;" class="product display-flex">
+									<main class="display-flex">
+										<img src="img/girls/3.jpg" alt="3">
+										<div>
+											<h1>Rochie - Mara</h1>
+											<h2>
+												<span class="lightgray">Culoare: </span> Verde
+											</h2>
+											<h2>
+												<span class="lightgray">Marime: </span> S
+											</h2>
+											<h2>
+												<span class="lightgray">Cant.: </span> 3
+											</h2>
+										</div>
+									</main>
+	
+									<div>
+										<svg id="close" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times" class="svg-inline--fa fa-times fa-w-11" role="img" viewBox="0 0 352 512"><path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"/></svg>
+										<h2 class="font-famiy-Oswald">0 Lei</h2>
+									</div>
+								</li>
+							</ul>
+
+							<li><p>Total pentru achitare ...............<span class="Total_price"></span></p></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+
+<!-- =============AL DOILEA MENIU(de navigare)=============================================================================== -->
+			<nav class="meniu_navigare background_image_style adaptive_font_size">
+				<h1 class="white font-famiy-Sanchez">Fininalizarea comenzii</h1>
+				<ul class="display-flex menu">
+					<li><a class="lightgray" href="index.html">Acasă</a></li>
+				</ul>
+			</nav>
+		</header>
+<!-- =============AL DOILEA MENIU(adaptive)=================================================================================================== -->
+		<nav class="meniu_navigare2 font-famiy-Sanchez">
+			<br>
+			<ul class="display-flex">
+				<li class="display_none2"><a class="font-famiy-Sanchez" href="index.html">Maorasallena</a></li>
+				<li><a href="index.html">Acasa</a></li>
+				<li><a href="shop.html">Shop</a></li>
+				<li><a href="news.html">Noutati</a></li>
+				<li><a href="about.html">Despre noi</a></li>
+				<li><a href="contacts.html">Contacte</a></li>
+				<li class="display_none2"><a href="user_card.html">Cosul meu</a></li>
+				<li class="display_none2"><a href="comparare.html">Comparare</a></li>
+				<li class="display_none2"><a href="wish_list.html">Lista de dorinte</a></li>
+			</ul>
+			<br>
+		</nav>
+<!-- ==================================================================================================================================================================================================================================== -->
+		<form action="#" method="post">
+			<div class="display-flex input_x2_one_line">
+				<span>Nume *<br><input type="text"></span> 
+				<br>
+				<span>Prenume *<br><input type="text"></span> 
+			</div>
+			<br> 
+			<span>
+				Tara *<br>
+				<select id="tara">
+					<option value="Moldova">Moldova</option>
+					<option value="Russia">Russia</option>
+					<option value="Armenia">Armenia</option>
+				</select>
+			</span>
+			<br>
+			<span>
+				Strada *<br>
+				<input  type="text" placeholder="Nume de Strada, numar etc...">
+				<br>
+				<input type="text" placeholder="Apartament, complex, unitate etc. (opțional)">
+			</span>
+			<br>
+			<span>Oraș *<br><input type="text"></span>
+			<span>Stat / Județ *<br><input type="text"></span>
+			<span>Cod Poștal *<br><input type="text"></span>
+			<br>
+			<div class="display-flex input_x2_one_line">
+				<span>Telefon *<br><input type="text"></span> 
+				<br>
+				<span>Email *<br><input type="text"></span> 
+			</div>
+			<br><br>
+
+			<section class="display-flex show_user_card">
+			</section>
+
+			<br><br>
+			<a href="card/card.html" class="button text-center" type="submit">Plasarea comenda</a>
+		</form>
+		<br><br>
+<!-- ====FOOTER================================================================================================================= -->
+		<footer>
+			<div class="social-media display-flex">
+				<h1 class="font-famiy-Sanchez">ClothingStore</h1>
+				<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook" class="svg-inline--fa fa-facebook fa-w-16" role="img" viewBox="0 0 512 512"><path fill="currentColor" d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+				<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter-square" class="svg-inline--fa fa-twitter-square fa-w-14" role="img" viewBox="0 0 448 512"><path fill="currentColor" d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm-48.9 158.8c.2 2.8.2 5.7.2 8.5 0 86.7-66 186.6-186.6 186.6-37.2 0-71.7-10.8-100.7-29.4 5.3.6 10.4.8 15.8.8 30.7 0 58.9-10.4 81.4-28-28.8-.6-53-19.5-61.3-45.5 10.1 1.5 19.2 1.5 29.6-1.2-30-6.1-52.5-32.5-52.5-64.4v-.8c8.7 4.9 18.9 7.9 29.6 8.3a65.447 65.447 0 0 1-29.2-54.6c0-12.2 3.2-23.4 8.9-33.1 32.3 39.8 80.8 65.8 135.2 68.6-9.3-44.5 24-80.6 64-80.6 18.9 0 35.9 7.9 47.9 20.7 14.8-2.8 29-8.3 41.6-15.8-4.9 15.2-15.2 28-28.8 36.1 13.2-1.4 26-5.1 37.8-10.2-8.9 13.1-20.1 24.7-32.9 34z"/></svg>
+				<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="pinterest" class="svg-inline--fa fa-pinterest fa-w-16" role="img" viewBox="0 0 496 512"><path fill="currentColor" d="M496 256c0 137-111 248-248 248-25.6 0-50.2-3.9-73.4-11.1 10.1-16.5 25.2-43.5 30.8-65 3-11.6 15.4-59 15.4-59 8.1 15.4 31.7 28.5 56.8 28.5 74.8 0 128.7-68.8 128.7-154.3 0-81.9-66.9-143.2-152.9-143.2-107 0-163.9 71.8-163.9 150.1 0 36.4 19.4 81.7 50.3 96.1 4.7 2.2 7.2 1.2 8.3-3.3.8-3.4 5-20.3 6.9-28.1.6-2.5.3-4.7-1.7-7.1-10.1-12.5-18.3-35.3-18.3-56.6 0-54.7 41.4-107.6 112-107.6 60.9 0 103.6 41.5 103.6 100.9 0 67.1-33.9 113.6-78 113.6-24.3 0-42.6-20.1-36.7-44.8 7-29.5 20.5-61.3 20.5-82.6 0-19-10.2-34.9-31.4-34.9-24.9 0-44.9 25.7-44.9 60.2 0 22 7.4 36.8 7.4 36.8s-24.5 103.8-29 123.2c-5 21.4-3 51.6-.9 71.2C65.4 450.9 0 361.1 0 256 0 119 111 8 248 8s248 111 248 248z"/></svg>
+			</div>
+			<div class="contacts padding_0-3pr display-flex">
+				<div>
+					<h1 class="font-famiy-Sanchez">DATE DE CONTACT</h1>
+					<span class="display-flex">
+						<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="map-marker-alt" class="svg-inline--fa fa-map-marker-alt fa-w-12" role="img" viewBox="0 0 384 512"><path fill="currentColor" d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"/></svg>
+						CC Soiuz, str. Aleco Russo 1
+					</span>
+					<br>
+					<span class="display-flex">
+						<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="map-marker-alt" class="svg-inline--fa fa-map-marker-alt fa-w-12" role="img" viewBox="0 0 384 512"><path fill="currentColor" d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"/></svg>
+						CC UNIC et. 3 strada Stefan cel Mare 8
+					</span>
+					<br>
+					<span class="display-flex">
+						<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="map-marker-alt" class="svg-inline--fa fa-map-marker-alt fa-w-12" role="img" viewBox="0 0 384 512"><path fill="currentColor" d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"/></svg>
+						CC Zorile et. 2, butic Mallena, str. Calea Iesilor 8
+					</span>
+					<br>
+					<span class="display-flex">
+						<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="envelope" class="svg-inline--fa fa-envelope fa-w-16" role="img" viewBox="0 0 512 512"><path fill="currentColor" d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"/></svg>
+						ArtStudio@gmail.com
+					</span>
+					<br>
+					<span class="display-flex">
+						<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="phone" class="svg-inline--fa fa-phone fa-w-16" role="img" viewBox="0 0 512 512"><path fill="currentColor" d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z"/></svg>
+						+373 79925373
+					</span><br>
+				</div>
+
+				<div>
+					<h1 class="font-famiy-Sanchez">INFORMATII</h1>
+					<a class="display-flex align_items_center margin_bottom_2vh" href="index.html">
+						<svg class="margin_right_10px" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-right" class="svg-inline--fa fa-caret-right fa-w-6" role="img" viewBox="0 0 192 512"><path fill="currentColor" d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z"/></svg>
+						<span>Acasa</span>
+					</a>
+					<a class="display-flex align_items_center margin_bottom_2vh" href="shop.html">
+						<svg class="margin_right_10px" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-right" class="svg-inline--fa fa-caret-right fa-w-6" role="img" viewBox="0 0 192 512"><path fill="currentColor" d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z"/></svg>
+						<span>Shop</span>
+					</a>
+				</div>
+				
+				<div class="svgHover">
+					<h1 class="font-famiy-Sanchez">CONTACTEAZA-TE CU NOI</h1>
+					<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook" class="svg-inline--fa fa-facebook fa-w-16" role="img" viewBox="0 0 512 512"><path fill="currentColor" d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+					<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter-square" class="svg-inline--fa fa-twitter-square fa-w-14" role="img" viewBox="0 0 448 512"><path fill="currentColor" d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm-48.9 158.8c.2 2.8.2 5.7.2 8.5 0 86.7-66 186.6-186.6 186.6-37.2 0-71.7-10.8-100.7-29.4 5.3.6 10.4.8 15.8.8 30.7 0 58.9-10.4 81.4-28-28.8-.6-53-19.5-61.3-45.5 10.1 1.5 19.2 1.5 29.6-1.2-30-6.1-52.5-32.5-52.5-64.4v-.8c8.7 4.9 18.9 7.9 29.6 8.3a65.447 65.447 0 0 1-29.2-54.6c0-12.2 3.2-23.4 8.9-33.1 32.3 39.8 80.8 65.8 135.2 68.6-9.3-44.5 24-80.6 64-80.6 18.9 0 35.9 7.9 47.9 20.7 14.8-2.8 29-8.3 41.6-15.8-4.9 15.2-15.2 28-28.8 36.1 13.2-1.4 26-5.1 37.8-10.2-8.9 13.1-20.1 24.7-32.9 34z"/></svg>
+					<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="pinterest" class="svg-inline--fa fa-pinterest fa-w-16" role="img" viewBox="0 0 496 512"><path fill="currentColor" d="M496 256c0 137-111 248-248 248-25.6 0-50.2-3.9-73.4-11.1 10.1-16.5 25.2-43.5 30.8-65 3-11.6 15.4-59 15.4-59 8.1 15.4 31.7 28.5 56.8 28.5 74.8 0 128.7-68.8 128.7-154.3 0-81.9-66.9-143.2-152.9-143.2-107 0-163.9 71.8-163.9 150.1 0 36.4 19.4 81.7 50.3 96.1 4.7 2.2 7.2 1.2 8.3-3.3.8-3.4 5-20.3 6.9-28.1.6-2.5.3-4.7-1.7-7.1-10.1-12.5-18.3-35.3-18.3-56.6 0-54.7 41.4-107.6 112-107.6 60.9 0 103.6 41.5 103.6 100.9 0 67.1-33.9 113.6-78 113.6-24.3 0-42.6-20.1-36.7-44.8 7-29.5 20.5-61.3 20.5-82.6 0-19-10.2-34.9-31.4-34.9-24.9 0-44.9 25.7-44.9 60.2 0 22 7.4 36.8 7.4 36.8s-24.5 103.8-29 123.2c-5 21.4-3 51.6-.9 71.2C65.4 450.9 0 361.1 0 256 0 119 111 8 248 8s248 111 248 248z"/></svg>
+					<h1 class="font-famiy-Sanchez">ABONEAZATE LA NEWS LETTER</h1>
+					<input type="email" placeholder="Adresa de email">
+					<br><br>
+					<input type="submit" value="Aboneaza-te">
+					<br>
+					<br>
+				</div>
+			</div>
+			<h4 class="copyright padding_0-3pr">Copyright @ 2020. Ideile de design sunt preluate de la Orsay și Mallena.</h4>
+		</footer>
+	</main>
+	<script src="js/pages_script/user_card.js"></script>
+	<script type="text/javascript">
+		display_no_dresses();
+		
+		function display_no_dresses(){
+			if(localStorage.getItem(name_local_storage_array) == null  || JSON.parse(localStorage.getItem(name_local_storage_array)) == ''){
+				let list_dresses = document.getElementById("preview_products");
+				let p = document.createElement("p");
+					p.innerHTML = "Nu a-ti selectat nici un produs!";
+					p.classList.add("warning");
+				list_dresses.appendChild(p);
+				list_dresses.style.height = "17vh";
+			}
+			else{
+				dresses = JSON.parse(localStorage.getItem(name_local_storage_array));
+				console.log(typeof dresses);
+				get_dresses_to_popUP_menu();
+			}
+		}
+
+		get_dresses_to_card();
+		function get_dresses_to_card(){
+			let show_user_card = document.getElementsByClassName("show_user_card")[0];
+			let sum = 0;
+			for (let i = 0; i < dresses.length; i++) {
+				let div_first = document.createElement("div");
+				let h1_produse = document.createElement("h1");
+					h1_produse.innerHTML = "Produs";
+					h1_produse.classList.add("border-right");
+				div_first.appendChild(h1_produse);
+				create_h2_no_tag_b(dresses[i][2], div_first, 'yes');
+				create_h2_with_tag_b(dresses[i][5], "Culoare:", div_first);		
+				create_h2_with_tag_b(dresses[i][4], "Marime:", div_first);		
+				create_h2_with_tag_b(dresses[i][6], "Cantitate:", div_first);		
+
+				let div_second = document.createElement("div");
+				    div_second.style.textAlign = "center";
+				let h1_pret = document.createElement("h1");
+					h1_pret.innerHTML = "Preț";
+					div_second.appendChild(h1_pret);
+				let Total_price = Math.round( parseFloat(dresses[i][3])*parseFloat(dresses[i][6]) );
+					sum += Total_price;
+				create_h2_no_tag_b(Total_price, div_second, "no");
+
+				show_user_card.appendChild(div_first);
+				show_user_card.appendChild(div_second);
+			}
+			let div = document.createElement("div");
+			let h1 = document.createElement("h1");
+				h1.innerHTML = "Suma totală: ";
+				h1.style.borderBottom = "0";
+				h1.style.borderRight = "2px solid lightgray";
+			div.appendChild(h1);
+			show_user_card.appendChild(div);
+
+			let div2 = document.createElement("div");
+			let h2 = document.createElement("h1");
+				h2.innerHTML = sum;
+				h2.style.textAlign = "center";
+				h2.style.borderBottom = "0";
+			div2.appendChild(h2);
+			show_user_card.appendChild(div2);
+		}
+		function create_h2_with_tag_b(innner_text_h2, inner_text_b, element_to_append){
+			let h2 = document.createElement("h2");
+				h2.innerText = innner_text_h2;
+				h2.style.display = "flex";
+				h2.style.flexDirection = "row-reverse";
+				h2.style.justifyContent = "flex-end";
+			let b = document.createElement("b");
+				b.innerText = inner_text_b;
+				h2.appendChild(b);
+				h2.classList.add("border-right");
+			element_to_append.appendChild(h2);
+		}
+		function create_h2_no_tag_b(innner_text_h2, element_to_append, with_or_no_border_right){
+			let h2 = document.createElement("h2");
+				h2.innerText = innner_text_h2;
+
+			if(with_or_no_border_right == 'yes')
+				h2.classList.add("border-right");
+			element_to_append.appendChild(h2);
+		}
+	</script>
+	<script src="js/small_scripts.js" type="text/javascript"></script>
+	<script src="js/page_adaptive.js" type="text/javascript"></script>
+	<script src="js/Scroll_to_top_of_page.js"></script>
+</body>
+</html>
